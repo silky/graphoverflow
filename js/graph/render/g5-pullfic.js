@@ -289,7 +289,7 @@ define(['d3', 'utils/utils', 'libs/easing', 'libs/howler'], function (d3, _util,
                     var randomChar = getRandomInt(0, charLen - 1);
                     that.addExplorer(intesity, pos, that.height - 100, {
                         time: 2000,
-                        color: 'rgb(199, 233, 180)',
+                        color: '#F9CE10',
                         startX: chars[randomChar].cx.animVal.value,
                         startY: chars[randomChar].cy.animVal.value
                     });
@@ -430,7 +430,7 @@ define(['d3', 'utils/utils', 'libs/easing', 'libs/howler'], function (d3, _util,
             var graph = {
                 "nodes": [
                     {
-                        "name": "Myriel",
+                        "name": "Vincent",
                         "group": 1,
                         "path": './templates/images/g5-pullfic/s.png'
                     },
@@ -507,7 +507,7 @@ define(['d3', 'utils/utils', 'libs/easing', 'libs/howler'], function (d3, _util,
                 .attr("class", "chars")
                 .attr("r", 35)
                 .style("fill", function (d) {
-                    return "url(#image-" + d.name + ")";
+                    return "url(#image-" + d.nme + ")";
                 })
                 .call(forceLayout.drag);
 

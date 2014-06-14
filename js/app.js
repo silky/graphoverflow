@@ -3,7 +3,7 @@
 
 require.config({
     baseUrl: './js',
-    //urlArgs: "bust=" + (new Date()).getTime(), //prevent cache for testing
+    urlArgs: "bust=" + (new Date()).getTime(), //prevent cache for testing
     paths: {
         knockout: 'libs/knockout',
         d3: 'libs/d3',
